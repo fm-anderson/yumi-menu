@@ -1,5 +1,5 @@
+import NavMenu from "../components/NavMenu";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 export async function homeLoader() {
   // this async function will run before the route loads.
@@ -21,7 +21,7 @@ function HomePage() {
         <h1 className="text-3xl font-bold underline">React Starter</h1>
       </main>
 
-      <Footer />
+      <NavMenu />
     </div>
   );
 }
