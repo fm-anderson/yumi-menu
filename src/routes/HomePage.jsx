@@ -1,3 +1,4 @@
+import ItemCard from "../components/ItemCard";
 import NavMenu from "../components/NavMenu";
 import Navbar from "../components/Navbar";
 
@@ -16,12 +17,15 @@ function HomePage() {
   return (
     <div
       data-theme="light"
-      className="flex h-screen flex-col items-center justify-between text-center"
+      className="flex h-screen flex-col items-center text-center"
     >
       <Navbar />
 
-      <main>
-        <h1 className="text-3xl font-bold underline">React Starter</h1>
+      <main className="grid grid-cols-2 grid-rows-2 gap-2">
+        <ItemCard />
+        <ItemCard />
+        <ItemCard />
+        <ItemCard />
       </main>
 
       <NavMenu />
