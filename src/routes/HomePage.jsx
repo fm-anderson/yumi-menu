@@ -14,7 +14,10 @@ export async function homeLoader() {
 
 function HomePage() {
   return (
-    <div className="flex h-screen flex-col items-center justify-between text-center">
+    <div
+      data-theme="light"
+      className="flex h-screen flex-col items-center justify-between text-center"
+    >
       <Navbar />
 
       <main>
